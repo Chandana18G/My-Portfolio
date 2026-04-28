@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>2019 — Chandana Gurusiddappa</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="year-style.css"/>
+</head>
+<body>
+<div class="orbs"><div class="orb orb1"></div><div class="orb orb2"></div></div>
+<nav>
+  <a href="../index.html" class="nav-back">← Back to Portfolio</a>
+  <div class="nav-year">2019</div>
+  <div class="nav-links-mini">
+    <a href="2019.html" class="nav-yr-link here">2019</a>
+    <a href="2022.html" class="nav-yr-link">2022</a>
+    <a href="2023.html" class="nav-yr-link">2023</a>
+    <a href="2025.html" class="nav-yr-link">2025</a>
+    <a href="2026.html" class="nav-yr-link">2026</a>
+  </div>
+</nav>
+<div class="hero-wrap">
+  <div class="hero-para-bg" id="heroBg"></div>
+  <div class="star-field" id="stars"></div>
+  <div class="hero-content">
+    <div class="year-badge">🌱 WHERE IT ALL BEGAN</div>
+    <div class="hero-big">2019</div>
+    <p class="hero-tag">"Where it all began · Diploma starts"</p>
+    <p style="color:var(--text2);font-size:0.93rem;max-width:480px;margin:0 auto">The beginning of my engineering journey at JSS Polytechnic for Women, Mysuru.</p>
+  </div>
+</div>
+<div class="page">
+  <div class="blk fade" style="margin-top:3rem">
+    <div class="blk-title"><div class="blk-icon blk-icon-cyan">✍️</div><h2 class="blk-h"> 2019 The Unconventional Start</h2></div>
+    <div class="story-text">
+      <!-- ★ EDIT YOUR TEXT HERE ★ -->
+      <p><strong>2019</strong></strong1> marked the start of everything. I began my <strong>Diploma in Computer Science and Engineering</strong> at JSS Polytechnic for Women in Mysuru, India.</p>
+      <p>After completing my 10th grade, I faced the common dilemma of choosing between science streams. Instead of following the traditional route, I chose a Diploma in Computer Science to gain practical knowledge and hands-on experience. This decision marked the beginning of my journey into technology.During my diploma, I actively participated in <strong>technical competitions and extracurricular activities</strong>, including a fashion show. These experiences helped me build confidence, explore my interests, and grow beyond academics.In my final year, I appeared for the engineering entrance exam and secured a rank of<strong> 211 among 40,000 </strong>candidates. This achievement reinforced my confidence and opened the door to pursue a degree in Computer Science.</p>
+      <!-- ★ END EDITABLE TEXT ★ -->
+    </div>
+  </div>
+  <div class="blk fade">
+    <div class="blk-title"><div class="blk-icon blk-icon-gold">📸</div><h2 class="blk-h">Photos from 2019</h2></div>
+    <div class="photo-grid">
+      <!-- ★ ADD PHOTOS: <div class="photo-item"><img src="photos/FILENAME.jpg" alt="Description"/><div class="photo-caption">Caption</div></div> -->
+      <div class="photo-add"><div class="photo-add-icon">📷</div><span>Add your photos here</span><span style="font-size:0.68rem;color:var(--text3)">See 2026.html for full instructions</span></div>
+    </div>
+  </div>
+  <div class="blk fade">
+    <div class="blk-title"><div class="blk-icon blk-icon-rose">🎬</div><h2 class="blk-h">Videos from 2019</h2></div>
+    <div class="video-grid">
+      <div class="video-placeholder"><div class="icon">🎥</div><p>Add video files or YouTube embeds here.</p><p style="font-size:0.72rem;margin-top:.5rem">See 2026.html for full instructions.</p></div>
+    </div>
+  </div>
+</div>
+<div class="bottom-nav">
+  <a href="../index.html" class="btn btn-ghost">← Portfolio</a>
+  <a href="2022.html" class="btn btn-primary">2022 →</a>
+</div>
+<script>
+const obs=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('in')})},{threshold:0.08});
+document.querySelectorAll('.fade').forEach(e=>obs.observe(e));
+window.addEventListener('scroll',()=>{const b=document.getElementById('heroBg');if(b)b.style.transform=`translateY(${window.pageYOffset*0.35}px)`},{passive:true});
+const sf=document.getElementById('stars');
+for(let i=0;i<40;i++){const s=document.createElement('div');s.className='star';s.style.cssText=`left:${Math.random()*100}%;top:${Math.random()*100}%;--dur:${3+Math.random()*5}s;--delay:${Math.random()*6}s;--op:${0.3+Math.random()*0.5}`;sf.appendChild(s)}
+</script>
+</body></html>

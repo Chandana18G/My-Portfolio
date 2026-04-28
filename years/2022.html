@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>2022 — Chandana Gurusiddappa</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="year-style.css"/>
+</head>
+<body>
+<div class="orbs"><div class="orb orb1"></div><div class="orb orb2"></div></div>
+<nav>
+  <a href="../index.html" class="nav-back">← Back to Portfolio</a>
+  <div class="nav-year">2022</div>
+  <div class="nav-links-mini">
+    <a href="2019.html" class="nav-yr-link">2019</a>
+    <a href="2022.html" class="nav-yr-link here">2022</a>
+    <a href="2023.html" class="nav-yr-link">2023</a>
+    <a href="2025.html" class="nav-yr-link">2025</a>
+    <a href="2026.html" class="nav-yr-link">2026</a>
+  </div>
+</nav>
+<div class="hero-wrap">
+  <div class="hero-para-bg" id="heroBg"></div>
+  <div class="star-field" id="stars"></div>
+  <div class="hero-content">
+    <div class="year-badge">🎓 DIPLOMA DONE · B.E. BEGINS</div>
+    <div class="hero-big">2022</div>
+    <p class="hero-tag">"Diploma done · B.E. begins"</p>
+    <p style="color:var(--text2);font-size:0.93rem;max-width:480px;margin:0 auto">Completing my Diploma with First Class Distinction and starting B.E. Computer Science.</p>
+  </div>
+</div>
+<div class="page">
+  <div class="blk fade" style="margin-top:3rem">
+    <div class="blk-title"><div class="blk-icon blk-icon-cyan">✍️</div><h2 class="blk-h">My Story in 2022</h2></div>
+    <div class="story-text">
+      <!-- ★ EDIT YOUR TEXT HERE ★ -->
+      <p>In 2022, I focused on building consistency in both<strong> my academic and personal life</strong>. I strengthened my foundation in data structures, problem-solving, and core computer science concepts, while also exploring areas like <strong>data analytics and machine learning</strong>. Alongside this, I maintained a disciplined fitness routine, balancing studies and training. This phase was less about big achievements and more about daily improvement, resilience, and preparing myself for real-world challenges..</strong> </p> Alongside academics, I began my fitness journey, which soon turned into a passion. I went on to represent my college in a <strong>state-level powerlifting </strong>competition, balancing both physical and intellectual growth.</p>
+      <p></p>
+      <!-- ★ END EDITABLE TEXT ★ -->
+    </div>
+  </div>
+  <div class="blk fade">
+    <div class="blk-title"><div class="blk-icon blk-icon-violet">🎯</div><h2 class="blk-h">Key Milestones</h2></div>
+    <div class="milestones">
+      <!-- ★ Copy & paste this block to add milestones ★ -->
+      <div class="milestone">
+        <div class="ms-dot"></div>
+        <div class="ms-text">
+          <div class="ms-month">MONTH 2022</div>
+          <div class="ms-desc"><strong>Milestone title</strong> — describe what happened here.</div>
+        </div>
+      </div>
+      <div class="milestone">
+        <div class="ms-dot"></div>
+        <div class="ms-text">
+          <div class="ms-month">MONTH 2022</div>
+          <div class="ms-desc">Another milestone — add as many as you like by copying this block.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="blk fade">
+    <div class="blk-title"><div class="blk-icon blk-icon-gold">📸</div><h2 class="blk-h">Photos from 2022</h2></div>
+    <div class="photo-grid">
+      <!--
+      ★ HOW TO ADD PHOTOS:
+      1. Put your photo in the "years/photos/" folder
+      2. Copy this block and paste it before the placeholder:
+         <div class="photo-item">
+           <img src="photos/FILENAME.jpg" alt="Description" loading="lazy"/>
+           <div class="photo-caption">Your caption here</div>
+         </div>
+      -->
+      <div class="photo-add"><div class="photo-add-icon">📷</div><span>Add photos here</span><span style="font-size:0.68rem;color:var(--text3)">See the HTML comment above</span></div>
+      <div class="photo-add"><div class="photo-add-icon">🖼️</div><span>More photos</span><span style="font-size:0.68rem;color:var(--text3)">Copy the block from the comment</span></div>
+    </div>
+  </div>
+  <div class="blk fade">
+    <div class="blk-title"><div class="blk-icon blk-icon-rose">🎬</div><h2 class="blk-h">Videos from 2022</h2></div>
+    <div class="video-grid">
+      <!--
+      ★ HOW TO ADD VIDEOS — two options:
+      Option A (your own video file):
+        <div class="video-item">
+          <video controls preload="metadata"><source src="photos/FILENAME.mp4" type="video/mp4"></video>
+          <div class="video-caption">Caption here</div>
+        </div>
+      Option B (YouTube embed):
+        <div class="video-item">
+          <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
+          <div class="video-caption">Caption here</div>
+        </div>
+      -->
+      <div class="video-placeholder"><div class="icon">🎥</div><p>Add your video files or YouTube embeds.</p><p style="font-size:0.72rem;margin-top:.5rem">See the HTML comment above for instructions.</p></div>
+    </div>
+  </div>
+</div>
+<div class="bottom-nav">
+  <a href="2019.html" class="btn btn-ghost">← 2019</a>
+  <a href="2023.html" class="btn btn-primary">2023 →</a>
+</div>
+<script>
+const obs=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('in')})},{threshold:0.08});
+document.querySelectorAll('.fade').forEach(e=>obs.observe(e));
+window.addEventListener('scroll',()=>{const b=document.getElementById('heroBg');if(b)b.style.transform=`translateY(${window.pageYOffset*0.35}px)`},{passive:true});
+const sf=document.getElementById('stars');
+for(let i=0;i<40;i++){const s=document.createElement('div');s.className='star';s.style.cssText=`left:${Math.random()*100}%;top:${Math.random()*100}%;--dur:${3+Math.random()*5}s;--delay:${Math.random()*6}s;--op:${0.3+Math.random()*0.5}`;sf.appendChild(s)}
+</script>
+</body></html>
